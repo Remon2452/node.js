@@ -74,12 +74,24 @@ console.log("updated");
 
 });*/
 
-const fs = require('fs');
+/*const fs = require('fs');
 fs.unlink('myfile.txt',(err)=>{
   if(err){
     console.log(err);
     return;
   }
   console.log("deleted");
-});
+});*/
 
+
+
+///async vs sync
+
+const fs = require('fs');
+console.log("One");
+
+const data=fs.readFileSync('student.txt');
+
+console.log(data.toString());
+
+console.log("Two");
