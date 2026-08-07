@@ -95,3 +95,11 @@ const data=fs.readFileSync('student.txt');
 console.log(data.toString());
 
 console.log("Two");
+
+fs.writeFile('student.txt','Department : CSE',(err)=>{
+  if(err){
+    console.log(err);
+    return;
+  }
+  console.log("updated and added");
+});

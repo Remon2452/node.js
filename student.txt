@@ -1,2 +1,1 @@
-Name : Remon
-Age : 23
+Department : CSE
