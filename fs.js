@@ -64,7 +64,7 @@ fs.readFile('note.txt',(err,data)=>{
 
 ///append
 
-const fs = require('fs');
+/*const fs = require('fs');
 fs.appendFile('myfile.txt','Bangladesh is not for begenier',(err)=>{
   if(err){
     console.log(err);
@@ -72,4 +72,14 @@ fs.appendFile('myfile.txt','Bangladesh is not for begenier',(err)=>{
   }
 console.log("updated");
 
+});*/
+
+const fs = require('fs');
+fs.unlink('myfile.txt',(err)=>{
+  if(err){
+    console.log(err);
+    return;
+  }
+  console.log("deleted");
 });
+
