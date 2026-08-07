@@ -20,14 +20,26 @@ ourReadStream.on('error', (err) => {
 */
 
 
-const fs = require('fs');
+/*const fs = require('fs');
 fs.readFile('myfile.txt',(err,data)=>{
 if(err){
   console.log(err);
   return;
 }
 console.log(data.toString());
+});*/
+
+
+const fs = require('fs');
+fs.writeFile('note.txt','i love bangladesh also love node.js',(err)=>{
+  if(err){
+    console.log(err);
+    return;
+  }
+  console.log("file cteated");
 });
+
+
 
 
 
