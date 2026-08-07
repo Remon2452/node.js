@@ -19,6 +19,7 @@ ourReadStream.on('error', (err) => {
 });
 */
 
+//readfile
 
 /*const fs = require('fs');
 fs.readFile('myfile.txt',(err,data)=>{
@@ -30,16 +31,45 @@ console.log(data.toString());
 });*/
 
 
-const fs = require('fs');
+//writefile
+
+/*const fs = require('fs');
 fs.writeFile('note.txt','i love bangladesh also love node.js',(err)=>{
   if(err){
     console.log(err);
     return;
   }
   console.log("file cteated");
+});*/
+
+///appendfile
+
+/*const fs = require('fs');
+fs.appendFile('note.txt','\nHello developer',(err)=>{
+  if(err){
+    console.log(err);
+    return;
+  }
+  console.log("updated");
+});*/
+
+/*const fs = require('fs');
+fs.readFile('note.txt',(err,data)=>{
+  if(err){
+    console.log(err);
+    return;
+  }
+  console.log(data.toString());
+});*/
+
+///append
+
+const fs = require('fs');
+fs.appendFile('myfile.txt','Bangladesh is not for begenier',(err)=>{
+  if(err){
+    console.log(err);
+    return;
+  }
+console.log("updated");
+
 });
-
-
-
-
-
