@@ -9,3 +9,5 @@ console.log(man);
 
 const multify = require('./function');
 console.log(multify(5,4));
+
+
